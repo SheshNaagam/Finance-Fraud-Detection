@@ -1,0 +1,117 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.jpg' %})">
+            <div class="carousel-container">
+              <div class="container" >
+                <h2 class="animate__animated animate__fadeInDown">Detecting Credit Card Frauds</h2>
+                <p class="animate__animated animate__fadeInUp"></p>  </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.jpg' %})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2>Bulk Transaction Testing</h2>
+                <p class="animate__animated animate__fadeInUp"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg' %})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Manual Input Testing</h2>
+                <p class="animate__animated animate__fadeInUp"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </section><!-- End Hero -->
+
+    </main>
+
+       <!-- ======= Team Section ======= -->
+       <section id="team" class="team section-bg" style="background: #fbdebe">>
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Group 8</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/elon.jpg' %}" alt="">
+                <h4>Akshay Sonavne</h4>
+                <span>Planning, Data Gathering, EDA</span>
+                <p>
+                  Delegating of Tasks at Modular Levels. Communicating Data From Open Source Platforms. Analysis and Analytics of Data. Preprocessing Pipelines.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/elon.jpg' %}" alt="">
+                <h4>Pranav Jadhav</h4>
+                <span>Testing, Debugging, Integration</span>
+                <p>
+                  Integrating Multiple Technologies into Single Project. Testing Small Units of Project For Functionality. Data Validation. Troubleshooting Errors.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/girl.jpg' %}" alt="">
+                <h4>Asha Bhagare</h4>
+                <span>UI Design, Front End, Testing</span>
+                <p>
+                  Designing Front End Structure and Pages. Testing Front End Input. Testing Back end Integration.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/elon.jpg' %}" alt="">
+                <h4>Venkatesh Nikam</h4>
+                <span>Modeling, Testing, Back End</span>
+                <p>
+                  Preparing and Testing ML-Models for accuracy. Designing Backend Structure and Integrating Models.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Team Section -->
+{% endblock %}
